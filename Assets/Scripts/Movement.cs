@@ -10,15 +10,7 @@ public class Movement : MonoBehaviour
     private float offset = 100;
     private float leftBound = -6.1f;
     private float rightBound = 2.81f;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-       
-    }
-
+  
     // Update is called once per frame
     void Update()
     {
@@ -27,7 +19,6 @@ public class Movement : MonoBehaviour
         ConstrainPlayer();
     }
 
-    
     private void HandleInput()
     {
         GameObject firstCollectable = AtmRush.Instance.Collectables[0];
@@ -55,6 +46,5 @@ public class Movement : MonoBehaviour
         tempPos.x = Mathf.Clamp(tempPos.x, leftBound, rightBound);
         firstCollectable.transform.localPosition = tempPos;
     }
-
 
 }
