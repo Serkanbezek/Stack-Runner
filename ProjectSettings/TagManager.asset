@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Collactable
   - Collectable
+  - Collected
+  - Gold
   layers:
   - Default
   - TransparentFX
