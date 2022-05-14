@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 109205915}
   - component: {fileID: 109205914}
   - component: {fileID: 109205913}
+  - component: {fileID: 109205917}
   m_Layer: 0
   m_Name: Collectable (19)
   m_TagString: Collectable
@@ -218,6 +219,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &109205917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109205912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &116778804
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +247,7 @@ GameObject:
   - component: {fileID: 116778807}
   - component: {fileID: 116778806}
   - component: {fileID: 116778805}
+  - component: {fileID: 116778809}
   m_Layer: 0
   m_Name: Collectable (16)
   m_TagString: Collectable
@@ -313,6 +331,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &116778809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116778804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &222413254
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +359,7 @@ GameObject:
   - component: {fileID: 222413257}
   - component: {fileID: 222413256}
   - component: {fileID: 222413255}
+  - component: {fileID: 222413259}
   m_Layer: 0
   m_Name: Collectable (34)
   m_TagString: Collectable
@@ -408,6 +443,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &222413259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222413254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &294486792
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +471,7 @@ GameObject:
   - component: {fileID: 294486795}
   - component: {fileID: 294486794}
   - component: {fileID: 294486793}
+  - component: {fileID: 294486797}
   m_Layer: 0
   m_Name: Collectable (5)
   m_TagString: Collectable
@@ -503,6 +555,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294486797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294486792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &398243107
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +583,7 @@ GameObject:
   - component: {fileID: 398243110}
   - component: {fileID: 398243109}
   - component: {fileID: 398243108}
+  - component: {fileID: 398243112}
   m_Layer: 0
   m_Name: Collectable (9)
   m_TagString: Collectable
@@ -598,6 +667,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398243112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398243107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &413477975
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +695,7 @@ GameObject:
   - component: {fileID: 413477978}
   - component: {fileID: 413477977}
   - component: {fileID: 413477976}
+  - component: {fileID: 413477980}
   m_Layer: 0
   m_Name: Collectable (18)
   m_TagString: Collectable
@@ -693,6 +779,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &413477980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413477975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &426080196
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +807,7 @@ GameObject:
   - component: {fileID: 426080199}
   - component: {fileID: 426080198}
   - component: {fileID: 426080197}
+  - component: {fileID: 426080201}
   m_Layer: 0
   m_Name: Collectable (31)
   m_TagString: Collectable
@@ -788,6 +891,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &426080201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426080196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &522500629
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +919,7 @@ GameObject:
   - component: {fileID: 522500632}
   - component: {fileID: 522500631}
   - component: {fileID: 522500630}
+  - component: {fileID: 522500634}
   m_Layer: 0
   m_Name: Collectable (7)
   m_TagString: Collectable
@@ -883,6 +1003,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &522500634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522500629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &554076550
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +1031,7 @@ GameObject:
   - component: {fileID: 554076553}
   - component: {fileID: 554076552}
   - component: {fileID: 554076551}
+  - component: {fileID: 554076555}
   m_Layer: 0
   m_Name: Collectable (28)
   m_TagString: Collectable
@@ -978,6 +1115,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &554076555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554076550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &558624218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1269,7 @@ GameObject:
   - component: {fileID: 579814653}
   - component: {fileID: 579814652}
   - component: {fileID: 579814651}
+  - component: {fileID: 579814655}
   m_Layer: 0
   m_Name: Collectable (12)
   m_TagString: Collectable
@@ -1199,6 +1353,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579814655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579814650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &587747670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,10 +1382,9 @@ GameObject:
   - component: {fileID: 587747672}
   - component: {fileID: 587747671}
   - component: {fileID: 587747675}
-  - component: {fileID: 587747676}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1290,12 +1459,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587747670}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.53, y: 2.5, z: -507.8}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.705458, y: -4.166364, z: -26.76}
   m_LocalScale: {x: 4, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 612368525}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &587747675
 BoxCollider:
@@ -1310,18 +1479,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 6.1232336e-17}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &587747676
-MonoBehaviour:
+--- !u!1 &612368524
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587747670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c693c0619e0996d47bd908a2d9b3cd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 612368525}
+  m_Layer: 0
+  m_Name: Gates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &612368525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612368524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.175458, y: 6.666364, z: -499.52652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 587747674}
+  - {fileID: 628002546}
+  - {fileID: 1010040550}
+  - {fileID: 1335180609}
+  - {fileID: 618950900}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618950894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,26 +1527,13 @@ GameObject:
   - component: {fileID: 618950898}
   - component: {fileID: 618950897}
   - component: {fileID: 618950896}
-  - component: {fileID: 618950895}
   m_Layer: 0
   m_Name: Gate (4)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &618950895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618950894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c693c0619e0996d47bd908a2d9b3cd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &618950896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1438,12 +1617,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618950894}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.85, y: 2.5, z: -520.74}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.6, y: -4.166364, z: 106.5}
   m_LocalScale: {x: 4, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 612368525}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &628002540
 GameObject:
@@ -1458,26 +1637,13 @@ GameObject:
   - component: {fileID: 628002544}
   - component: {fileID: 628002543}
   - component: {fileID: 628002542}
-  - component: {fileID: 628002541}
   m_Layer: 0
   m_Name: Gate (1)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &628002541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628002540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c693c0619e0996d47bd908a2d9b3cd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &628002542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1561,12 +1727,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628002540}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.53, y: 2.5, z: -507.8}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.35, y: -4.166364, z: -1.19}
   m_LocalScale: {x: 4, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 612368525}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &660259258
 GameObject:
@@ -1580,6 +1746,7 @@ GameObject:
   - component: {fileID: 660259261}
   - component: {fileID: 660259260}
   - component: {fileID: 660259259}
+  - component: {fileID: 660259263}
   m_Layer: 0
   m_Name: Collectable (13)
   m_TagString: Collectable
@@ -1663,6 +1830,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &660259263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660259258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &667332133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1858,7 @@ GameObject:
   - component: {fileID: 667332136}
   - component: {fileID: 667332135}
   - component: {fileID: 667332134}
+  - component: {fileID: 667332138}
   m_Layer: 0
   m_Name: Collectable (26)
   m_TagString: Collectable
@@ -1758,6 +1942,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667332138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667332133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,6 +2063,7 @@ GameObject:
   - component: {fileID: 822871686}
   - component: {fileID: 822871685}
   - component: {fileID: 822871684}
+  - component: {fileID: 822871688}
   m_Layer: 0
   m_Name: Collectable (29)
   m_TagString: Collectable
@@ -1946,6 +2147,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &822871688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822871683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &888614212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,6 +2237,7 @@ GameObject:
   - component: {fileID: 896697412}
   - component: {fileID: 896697411}
   - component: {fileID: 896697410}
+  - component: {fileID: 896697414}
   m_Layer: 0
   m_Name: Collectable (4)
   m_TagString: Collectable
@@ -2103,6 +2321,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &896697414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896697409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,26 +2529,13 @@ GameObject:
   - component: {fileID: 1010040548}
   - component: {fileID: 1010040547}
   - component: {fileID: 1010040546}
-  - component: {fileID: 1010040545}
   m_Layer: 0
   m_Name: Gate (2)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1010040545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010040544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c693c0619e0996d47bd908a2d9b3cd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1010040546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2398,12 +2619,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010040544}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.53, y: 2.5, z: -400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.6, y: -4.166364, z: 19.7}
   m_LocalScale: {x: 4, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 612368525}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040536105
 GameObject:
@@ -2417,6 +2638,7 @@ GameObject:
   - component: {fileID: 1040536108}
   - component: {fileID: 1040536107}
   - component: {fileID: 1040536106}
+  - component: {fileID: 1040536110}
   m_Layer: 0
   m_Name: Collectable (32)
   m_TagString: Collectable
@@ -2500,6 +2722,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1040536110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040536105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1054671264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,6 +2750,7 @@ GameObject:
   - component: {fileID: 1054671267}
   - component: {fileID: 1054671266}
   - component: {fileID: 1054671265}
+  - component: {fileID: 1054671269}
   m_Layer: 0
   m_Name: Collectable (17)
   m_TagString: Collectable
@@ -2595,6 +2834,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054671269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054671264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1066218656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2862,7 @@ GameObject:
   - component: {fileID: 1066218659}
   - component: {fileID: 1066218658}
   - component: {fileID: 1066218657}
+  - component: {fileID: 1066218661}
   m_Layer: 0
   m_Name: Collectable (25)
   m_TagString: Collectable
@@ -2690,6 +2946,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1066218661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066218656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1157592894
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,6 +2974,7 @@ GameObject:
   - component: {fileID: 1157592897}
   - component: {fileID: 1157592896}
   - component: {fileID: 1157592895}
+  - component: {fileID: 1157592899}
   m_Layer: 0
   m_Name: Collectable (15)
   m_TagString: Collectable
@@ -2785,6 +3058,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157592899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157592894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1201922071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2797,6 +3086,7 @@ GameObject:
   - component: {fileID: 1201922074}
   - component: {fileID: 1201922073}
   - component: {fileID: 1201922072}
+  - component: {fileID: 1201922076}
   m_Layer: 0
   m_Name: Collectable (14)
   m_TagString: Collectable
@@ -2880,6 +3170,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1201922076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201922071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1216636963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +3198,7 @@ GameObject:
   - component: {fileID: 1216636966}
   - component: {fileID: 1216636965}
   - component: {fileID: 1216636964}
+  - component: {fileID: 1216636968}
   m_Layer: 0
   m_Name: Collectable (22)
   m_TagString: Collectable
@@ -2975,6 +3282,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1216636968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216636963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1316667556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,6 +3310,7 @@ GameObject:
   - component: {fileID: 1316667559}
   - component: {fileID: 1316667558}
   - component: {fileID: 1316667557}
+  - component: {fileID: 1316667561}
   m_Layer: 0
   m_Name: Collectable (8)
   m_TagString: Collectable
@@ -3070,6 +3394,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1316667561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316667556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1335180603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,26 +3423,13 @@ GameObject:
   - component: {fileID: 1335180607}
   - component: {fileID: 1335180606}
   - component: {fileID: 1335180605}
-  - component: {fileID: 1335180604}
   m_Layer: 0
   m_Name: Gate (3)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1335180604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335180603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c693c0619e0996d47bd908a2d9b3cd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1335180605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3186,12 +3513,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335180603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: 2.5, z: -455.6}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5, y: -4.166364, z: 56.18}
   m_LocalScale: {x: 4, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 612368525}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393689194
 GameObject:
@@ -3205,6 +3532,7 @@ GameObject:
   - component: {fileID: 1393689197}
   - component: {fileID: 1393689196}
   - component: {fileID: 1393689195}
+  - component: {fileID: 1393689199}
   m_Layer: 0
   m_Name: Collectable (11)
   m_TagString: Collectable
@@ -3288,6 +3616,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1393689199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393689194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1422835314
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,6 +3644,7 @@ GameObject:
   - component: {fileID: 1422835317}
   - component: {fileID: 1422835316}
   - component: {fileID: 1422835315}
+  - component: {fileID: 1422835319}
   m_Layer: 0
   m_Name: Collectable (10)
   m_TagString: Collectable
@@ -3383,6 +3728,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1422835319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422835314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1427360478
 GameObject:
   m_ObjectHideFlags: 0
@@ -3395,6 +3756,7 @@ GameObject:
   - component: {fileID: 1427360481}
   - component: {fileID: 1427360480}
   - component: {fileID: 1427360479}
+  - component: {fileID: 1427360483}
   m_Layer: 0
   m_Name: Collectable (24)
   m_TagString: Collectable
@@ -3478,6 +3840,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1427360483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427360478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1456988803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,6 +3868,7 @@ GameObject:
   - component: {fileID: 1456988806}
   - component: {fileID: 1456988805}
   - component: {fileID: 1456988804}
+  - component: {fileID: 1456988808}
   m_Layer: 0
   m_Name: Collectable (20)
   m_TagString: Collectable
@@ -3573,6 +3952,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1456988808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456988803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1481566305
 GameObject:
   m_ObjectHideFlags: 0
@@ -3585,6 +3980,7 @@ GameObject:
   - component: {fileID: 1481566308}
   - component: {fileID: 1481566307}
   - component: {fileID: 1481566306}
+  - component: {fileID: 1481566310}
   m_Layer: 0
   m_Name: Collectable (1)
   m_TagString: Collectable
@@ -3668,6 +4064,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1481566310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481566305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1531352489
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,6 +4092,7 @@ GameObject:
   - component: {fileID: 1531352492}
   - component: {fileID: 1531352491}
   - component: {fileID: 1531352490}
+  - component: {fileID: 1531352494}
   m_Layer: 0
   m_Name: Collectable (33)
   m_TagString: Collectable
@@ -3763,6 +4176,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531352494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531352489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1577895426
 GameObject:
   m_ObjectHideFlags: 0
@@ -3775,6 +4204,7 @@ GameObject:
   - component: {fileID: 1577895429}
   - component: {fileID: 1577895428}
   - component: {fileID: 1577895427}
+  - component: {fileID: 1577895431}
   m_Layer: 0
   m_Name: Collectable (6)
   m_TagString: Collectable
@@ -3858,6 +4288,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1577895431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577895426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1601599102
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,6 +4316,7 @@ GameObject:
   - component: {fileID: 1601599105}
   - component: {fileID: 1601599104}
   - component: {fileID: 1601599103}
+  - component: {fileID: 1601599107}
   m_Layer: 0
   m_Name: Collectable (27)
   m_TagString: Collectable
@@ -3953,6 +4400,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1601599107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601599102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1739243436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,6 +4428,7 @@ GameObject:
   - component: {fileID: 1739243439}
   - component: {fileID: 1739243438}
   - component: {fileID: 1739243437}
+  - component: {fileID: 1739243441}
   m_Layer: 0
   m_Name: Collectable (2)
   m_TagString: Collectable
@@ -4048,6 +4512,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1739243441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739243436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1855802813
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,6 +4540,7 @@ GameObject:
   - component: {fileID: 1855802816}
   - component: {fileID: 1855802815}
   - component: {fileID: 1855802814}
+  - component: {fileID: 1855802818}
   m_Layer: 0
   m_Name: Collectable (21)
   m_TagString: Collectable
@@ -4143,6 +4624,130 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1855802818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855802813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
+--- !u!1 &1857437915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1857437920}
+  - component: {fileID: 1857437919}
+  - component: {fileID: 1857437918}
+  - component: {fileID: 1857437917}
+  - component: {fileID: 1857437916}
+  m_Layer: 0
+  m_Name: Obstacle
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1857437916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857437915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e8568117b8faf46a5a864229499aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1857437917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857437915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1857437918
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857437915}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f98b30234a02fcd4ba5e8557d8a9b798, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1857437919
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857437915}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1857437920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857437915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.73, y: 0.147, z: -487.5}
+  m_LocalScale: {x: 3.67, y: 0.3, z: 0.26}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1876080239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4155,6 +4760,7 @@ GameObject:
   - component: {fileID: 1876080242}
   - component: {fileID: 1876080241}
   - component: {fileID: 1876080240}
+  - component: {fileID: 1876080244}
   m_Layer: 0
   m_Name: Collectable (35)
   m_TagString: Collectable
@@ -4238,6 +4844,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1876080244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876080239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &1934625004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,6 +4872,7 @@ GameObject:
   - component: {fileID: 1934625007}
   - component: {fileID: 1934625006}
   - component: {fileID: 1934625005}
+  - component: {fileID: 1934625009}
   m_Layer: 0
   m_Name: Collectable (23)
   m_TagString: Collectable
@@ -4333,6 +4956,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1934625009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934625004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &2020232363
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,6 +4984,7 @@ GameObject:
   - component: {fileID: 2020232366}
   - component: {fileID: 2020232365}
   - component: {fileID: 2020232364}
+  - component: {fileID: 2020232368}
   m_Layer: 0
   m_Name: Collectable (3)
   m_TagString: Collectable
@@ -4428,6 +5068,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020232368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020232363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &2035840000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,6 +5162,7 @@ GameObject:
   - component: {fileID: 2067290439}
   - component: {fileID: 2067290438}
   - component: {fileID: 2067290437}
+  - component: {fileID: 2067290441}
   m_Layer: 0
   m_Name: Collectable (36)
   m_TagString: Collectable
@@ -4589,6 +5246,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2067290441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067290436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1 &2130915535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,6 +5274,7 @@ GameObject:
   - component: {fileID: 2130915538}
   - component: {fileID: 2130915537}
   - component: {fileID: 2130915536}
+  - component: {fileID: 2130915540}
   m_Layer: 0
   m_Name: Collectable (30)
   m_TagString: Collectable
@@ -4684,6 +5358,22 @@ Transform:
   m_Father: {fileID: 2035840001}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130915540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130915535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2e413e59daa844970849b069f5c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  DiamondColor: {r: 1, g: 0, b: 1, a: 1}
+  isGreen: 0
+  isGold: 0
 --- !u!1001 &1896627751786171075
 PrefabInstance:
   m_ObjectHideFlags: 0
