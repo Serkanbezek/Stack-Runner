@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Collactable
   - Collectable
   - Collected
-  - Gold
+  - Obstacle
+  - Gate
   layers:
   - Default
   - TransparentFX
