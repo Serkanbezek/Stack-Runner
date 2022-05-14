@@ -11,8 +11,8 @@ public class Collision : MonoBehaviour
             if (!AtmRush.Instance.Collectables.Contains(other.gameObject))
             {
                 other.GetComponent<BoxCollider>().isTrigger = false;
-                other.gameObject.tag = "Collected";
                 other.gameObject.AddComponent<Collision>();
+                other.gameObject.tag = "Collected";
                 other.gameObject.AddComponent<Rigidbody>();
                 other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 AtmRush.Instance.StackCollectable(other.gameObject, AtmRush.Instance.Collectables.Count - 1);
