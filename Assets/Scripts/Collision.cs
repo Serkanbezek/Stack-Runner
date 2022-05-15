@@ -12,9 +12,8 @@ public class Collision : MonoBehaviour
             {
                 other.GetComponent<BoxCollider>().isTrigger = false;
                 other.gameObject.AddComponent<Collision>();
-                other.gameObject.tag = "Collected";
-                other.gameObject.AddComponent<Rigidbody>();
-                other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
+                other.gameObject.AddComponent<MPBController>();
                 AtmRush.Instance.StackCollectable(other.gameObject, AtmRush.Instance.Collectables.Count - 1);
             }
         }
