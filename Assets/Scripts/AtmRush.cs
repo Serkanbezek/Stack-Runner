@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class AtmRush : MonoBehaviour
+public class AtmRush : Singleton<AtmRush>
 {
-    public static AtmRush Instance;
     public float MovementDelay = 0.25f;
     public List<GameObject> Collectables = new List<GameObject>();
     
-    private void Awake()
-    {
-        Instance = this;
-    }
-
     private void Update()
     {
         LerpListElements();
@@ -42,7 +36,6 @@ public class AtmRush : MonoBehaviour
 
         }
     }
-
     private void LerpListElements()
     {
         float lerpValue = 20;
@@ -53,4 +46,28 @@ public class AtmRush : MonoBehaviour
             Collectables[i].transform.localPosition = new Vector3(Mathf.Lerp(pos.x, finalPos.x, Time.deltaTime * lerpValue), pos.y, pos.z);
         }
     }
+
+    public void DestroyItem(GameObject collisionItem)
+    {
+        int collisionIndex = Collectables.IndexOf(collisionItem);
+
+        if (collisionIndex == Collectables.Count - 1)
+        {
+            Collectables.RemoveAt(Collectables.Count - 1);
+            Destroy(collisionItem.gameObject);
+        }
+        else
+        {
+            for (int i = collisionIndex; i < Collectables.Count; i++)
+            {
+                Collectables[i].transform.localPosition = new Vector3(Random.Range(2.80f, -6f), Collectables[i].transform.localPosition.y, Collectables[i].transform.localPosition.z + Random.Range(6, 8));
+                Collectables[i].transform.parent = null;
+                Collectables[i].GetComponent<BoxCollider>().isTrigger = true;
+                Destroy(Collectables[i].GetComponent<Rigidbody>());
+                Destroy(Collectables[i].GetComponent<Collision>());
+            }
+            Collectables.RemoveRange(collisionIndex, Collectables.Count - collisionIndex);
+        }
+    }
+        
 }
