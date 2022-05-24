@@ -5,7 +5,6 @@ using DG.Tweening;
 
 public class AtmRush : Singleton<AtmRush>
 {
-    public float MovementDelay = 0.25f;
     public List<GameObject> Collectables = new List<GameObject>();
     
     private void Update()
@@ -16,8 +15,8 @@ public class AtmRush : Singleton<AtmRush>
     public void StackCollectable(GameObject other, int index)
     {
         other.transform.parent = transform;
-        Vector3 newPos = Collectables[index].transform.localPosition;
-        newPos.z += 1.1f;
+        Vector3 newPos = new Vector3(Collectables[index].transform.localPosition.x, other.transform.localPosition.y, Collectables[index].transform.localPosition.z);
+        newPos.z += 0.5f;
         other.transform.localPosition = newPos;
         Collectables.Add(other);
         StartCoroutine(MakeObjectsBigger());
@@ -28,17 +27,17 @@ public class AtmRush : Singleton<AtmRush>
         for (int i = Collectables.Count - 1; i > 0; i--)
         {
             int index = i;
-            Vector3 scale = new Vector3(1, 1, 1);
+            Vector3 scale = new Vector3(1, 0.4f, 0.4f);
             scale *= 1.5f;
             Collectables[index].transform.DOScale(scale, 0.1f).OnComplete(() =>
-            Collectables[index].transform.DOScale(new Vector3(1, 1, 1), 0.1f));
+            Collectables[index].transform.DOScale(new Vector3(1, 0.4f, 0.4f), 0.1f));
             yield return new WaitForSeconds(0.05f);
 
         }
     }
     private void LerpListElements()
     {
-        float lerpValue = 20;
+        float lerpValue = 25;
         for (int i = 1; i < Collectables.Count; i++)
         {
             Vector3 pos = Collectables[i].transform.localPosition;
@@ -54,17 +53,18 @@ public class AtmRush : Singleton<AtmRush>
         if (collisionIndex == Collectables.Count - 1)
         {
             Collectables.RemoveAt(Collectables.Count - 1);
-            Destroy(collisionItem.gameObject);
+            collisionItem.gameObject.SetActive(false);
         }
         else
         {
             for (int i = collisionIndex; i < Collectables.Count; i++)
             {
-                Collectables[i].transform.localPosition = new Vector3(Random.Range(2.80f, -6f), Collectables[i].transform.localPosition.y, Collectables[i].transform.localPosition.z + Random.Range(6, 8));
+                Collectables[i].transform.localPosition = new Vector3(Random.Range(1.20f, -4.50f), Collectables[i].transform.localPosition.y, Collectables[i].transform.localPosition.z + Random.Range(6, 8));
                 Collectables[i].transform.parent = null;
                 Collectables[i].GetComponent<BoxCollider>().isTrigger = true;
                 Destroy(Collectables[i].GetComponent<Rigidbody>());
                 Destroy(Collectables[i].GetComponent<Collision>());
+                Destroy(Collectables[i].GetComponent<MPBController>());
             }
             Collectables.RemoveRange(collisionIndex, Collectables.Count - collisionIndex);
         }
