@@ -6,9 +6,6 @@ public class ObstacleManager : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player")
-        {
-            AtmRush.Instance.DestroyItem(other.gameObject);
-        }
+        if (other.tag != "Player") AtmRush.Instance.DestroyItem(other.gameObject);
     }
 }
