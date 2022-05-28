@@ -6,7 +6,8 @@ using DG.Tweening;
 public class AtmRush : Singleton<AtmRush>
 {
     public List<GameObject> Collectables = new List<GameObject>();
-    
+    private float lerpValue = 30;
+
     private void Update()
     {
         LerpListElements();
@@ -37,7 +38,7 @@ public class AtmRush : Singleton<AtmRush>
     }
     private void LerpListElements()
     {
-        float lerpValue = 25;
+        
         for (int i = 1; i < Collectables.Count; i++)
         {
             Vector3 pos = Collectables[i].transform.localPosition;
@@ -53,7 +54,7 @@ public class AtmRush : Singleton<AtmRush>
         if (collisionIndex == Collectables.Count - 1)
         {
             Collectables.RemoveAt(Collectables.Count - 1);
-            collisionItem.gameObject.SetActive(false);
+            collisionItem.SetActive(false);
         }
         else
         {
@@ -63,8 +64,7 @@ public class AtmRush : Singleton<AtmRush>
                 Collectables[i].transform.parent = null;
                 Collectables[i].GetComponent<BoxCollider>().isTrigger = true;
                 Destroy(Collectables[i].GetComponent<Rigidbody>());
-                Destroy(Collectables[i].GetComponent<Collision>());
-                Destroy(Collectables[i].GetComponent<MPBController>());
+                Collectables[i].GetComponent<Collision>().enabled = false;
             }
             Collectables.RemoveRange(collisionIndex, Collectables.Count - collisionIndex);
         }
