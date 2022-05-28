@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+using UnityEngine.UI;
+
+public class FinishLine : Singleton<FinishLine>
+{
+    public Button nextLevelButton;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Collectable"))
+        {
+            DropCollectables(other.gameObject);
+        }
+        else if (other.CompareTag("Player"))
+        {
+            GameManager.Instance.isLevelFinished = true;
+            other.transform.DOMove(new Vector3(0.048f, other.transform.position.y, other.transform.position.z + 5), 1).OnComplete(() =>
+            other.GetComponent<Animator>().SetBool("isRunning", false));
+            nextLevelButton.gameObject.SetActive(true);
+        }
+    }
+
+    private void DropCollectables(GameObject collectable)
+    {
+        collectable.transform.parent = null;
+        collectable.GetComponent<Collision>().enabled = false;
+        Destroy(collectable.GetComponent<Rigidbody>());
+        AtmRush.Instance.Collectables.Remove(collectable);
+        collectable.AddComponent<MoveToAtm>();
+    }
+
+}
