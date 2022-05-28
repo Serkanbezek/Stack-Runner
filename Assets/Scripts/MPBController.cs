@@ -11,7 +11,7 @@ public class MPBController : MonoBehaviour
     public bool isGreen, isGold;
 
     private void Start()
-    {
+    { 
         isGreen = true;
         isGold = false;
         _renderer = GetComponent<Renderer>();
