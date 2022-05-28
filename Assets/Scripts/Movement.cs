@@ -6,18 +6,23 @@ public class Movement : Singleton<Movement>
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private float swipeSpeed;
-    //private Vector3 firstPos, endPos;
+    [SerializeField] private float SmoothTime = 0.3f;
     private float leftBound = -4.50f;
     private float rightBound = 1.20f;
     private float differenceX;
     private float lastFrameFingerPosX;
     public GameObject firstCollectable;
-
-    private void Awake() => firstCollectable = AtmRush.Instance.Collectables[0];
+    private Vector3 playerVelocity = Vector3.zero;
     
+
+    private void Awake()
+    {
+        firstCollectable = AtmRush.Instance.Collectables[0];
+    }
+
     void Update()
     {
-        if (AnimationManager.Instance.isGameActive == true)
+        if (GameManager.Instance.isGameActive && !GameManager.Instance.isLevelFinished)
         {
             ForwardMovement();
             HandleInput();
@@ -27,7 +32,7 @@ public class Movement : Singleton<Movement>
 
     private void HandleInput()
     {
-        
+
         if (Input.GetMouseButtonDown(0))
         {
             lastFrameFingerPosX = Input.mousePosition.x;
@@ -36,20 +41,18 @@ public class Movement : Singleton<Movement>
         {
             differenceX = Input.mousePosition.x - lastFrameFingerPosX;
             lastFrameFingerPosX = Input.mousePosition.x;
-            
+
         }
         else if (Input.GetMouseButtonUp(0))
         {
             differenceX = 0f;
         }
-        firstCollectable.transform.Translate(differenceX * Time.deltaTime * swipeSpeed, 0, 0);
+        firstCollectable.transform.localPosition = Vector3.SmoothDamp(firstCollectable.transform.localPosition, new Vector3(firstCollectable.transform.localPosition.x + (differenceX * swipeSpeed), firstCollectable.transform.localPosition.y, firstCollectable.transform.localPosition.z), ref playerVelocity, SmoothTime);
     }
-
-    private void ForwardMovement() => transform.position += moveSpeed * Time.deltaTime * Vector3.forward;
+    public void ForwardMovement() => transform.position += moveSpeed * Time.deltaTime * Vector3.forward;
 
     private void ConstrainPlayer()
     {
-        GameObject firstCollectable = AtmRush.Instance.Collectables[0];
         var tempPos = firstCollectable.transform.localPosition;
         tempPos.x = Mathf.Clamp(tempPos.x, leftBound, rightBound);
         firstCollectable.transform.localPosition = tempPos;
