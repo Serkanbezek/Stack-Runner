@@ -12,11 +12,11 @@ public class AnimationManager : MonoBehaviour
     }
     void Update()
     {
-        if (!GameManager.Instance.isGameActive)
+        if (!GameManager.Instance.IsGameActive)
         {
             if (Input.GetMouseButtonUp(0))
             {
-                GameManager.Instance.isGameActive = true;
+                GameManager.Instance.IsGameActive = true;
                 animator.SetBool("isRunning", true);
             }
         }
