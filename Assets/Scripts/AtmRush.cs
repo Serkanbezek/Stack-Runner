@@ -30,10 +30,9 @@ public class AtmRush : Singleton<AtmRush>
             int index = i;
             Vector3 scale = new Vector3(1, 0.4f, 0.4f);
             scale *= 1.5f;
-            Collectables[index].transform.DOScale(scale, 0.1f).OnComplete(() =>
-            Collectables[index].transform.DOScale(new Vector3(1, 0.4f, 0.4f), 0.1f));
+            Collectables[index].transform.DOScale(scale, 0.1f).SetLink(Collectables[index]).OnComplete(() =>
+            Collectables[index].transform.DOScale(new Vector3(1, 0.4f, 0.4f), 0.1f).SetLink(Collectables[index]));
             yield return new WaitForSeconds(0.05f);
-
         }
     }
     private void LerpListElements()
@@ -46,28 +45,4 @@ public class AtmRush : Singleton<AtmRush>
             Collectables[i].transform.localPosition = new Vector3(Mathf.Lerp(pos.x, finalPos.x, Time.deltaTime * lerpValue), pos.y, pos.z);
         }
     }
-
-    public void DestroyItem(GameObject collisionItem)
-    {
-        int collisionIndex = Collectables.IndexOf(collisionItem);
-
-        if (collisionIndex == Collectables.Count - 1)
-        {
-            Collectables.RemoveAt(Collectables.Count - 1);
-            collisionItem.SetActive(false);
-        }
-        else
-        {
-            for (int i = collisionIndex; i < Collectables.Count; i++)
-            {
-                Collectables[i].transform.localPosition = new Vector3(Random.Range(1.20f, -4.50f), Collectables[i].transform.localPosition.y, Collectables[i].transform.localPosition.z + Random.Range(6, 8));
-                Collectables[i].transform.parent = null;
-                Collectables[i].GetComponent<BoxCollider>().isTrigger = true;
-                Destroy(Collectables[i].GetComponent<Rigidbody>());
-                Collectables[i].GetComponent<Collision>().enabled = false;
-            }
-            Collectables.RemoveRange(collisionIndex, Collectables.Count - collisionIndex);
-        }
-    }
-        
 }
