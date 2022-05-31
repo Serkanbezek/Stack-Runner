@@ -4,10 +4,10 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class FinishLine : Singleton<FinishLine>
+public class FinishLine : MonoBehaviour
 {
-    public Button nextLevelButton;
-    private void OnTriggerEnter(Collider other)
+    public Button NextLevelButton;
+    private IEnumerator OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Collectable"))
         {
@@ -15,10 +15,11 @@ public class FinishLine : Singleton<FinishLine>
         }
         else if (other.CompareTag("Player"))
         {
-            GameManager.Instance.isLevelFinished = true;
-            other.transform.DOMove(new Vector3(0.048f, other.transform.position.y, other.transform.position.z + 5), 1).OnComplete(() =>
+            GameManager.Instance.IsLevelFinished = true;
+            other.transform.DOMove(new Vector3(0.048f, other.transform.position.y, other.transform.position.z + 5), 1).SetLink(other.gameObject).OnComplete(() =>
             other.GetComponent<Animator>().SetBool("isRunning", false));
-            nextLevelButton.gameObject.SetActive(true);
+            yield return new WaitForSeconds(1.5f);
+            NextLevelButton.gameObject.SetActive(true);
         }
     }
 
