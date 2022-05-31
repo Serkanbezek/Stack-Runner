@@ -22,7 +22,7 @@ public class Movement : Singleton<Movement>
 
     void Update()
     {
-        if (GameManager.Instance.isGameActive && !GameManager.Instance.isLevelFinished)
+        if (GameManager.Instance.IsGameActive && !GameManager.Instance.IsLevelFinished)
         {
             ForwardMovement();
             HandleInput();
