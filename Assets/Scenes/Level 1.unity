@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.25490198, g: 0.6745098, b: 0.98039216, a: 1}
+  m_FogColor: {r: 0.25490198, g: 0.6745098, b: 0.9803922, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.013
   m_LinearFogStart: 50
@@ -246,8 +246,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &29193504
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,8 +373,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &32231004
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,8 +500,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &94149707
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,8 +547,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d290bd8720c4bf468c02bbc79c227d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGameActive: 0
-  isLevelFinished: 0
+  IsGameActive: 0
+  IsLevelFinished: 0
+  ScoreText: {fileID: 1685868090}
+  Score: 0
 --- !u!1 &239811219
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,8 +674,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &294486792
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,8 +801,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &320666210
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,8 +928,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &356706222
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356706222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8, y: 0, z: -140.8}
+  m_LocalPosition: {x: -1.8, y: 0, z: -140.88}
   m_LocalScale: {x: 1, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 2035840001}
@@ -1041,8 +1055,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &433522865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,8 +1182,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &500673888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,8 +1222,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103, y: -54}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 146, y: -130}
+  m_SizeDelta: {x: 172.3, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500673890
 MonoBehaviour:
@@ -1276,7 +1294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1424,8 +1442,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &547404360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,8 +1569,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &555915823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,8 +1797,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587747670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.54, y: -4.166364, z: -94.2}
-  m_LocalScale: {x: 3.5, y: 5, z: 1}
+  m_LocalPosition: {x: -2.66, y: -4.887, z: -94.2}
+  m_LocalScale: {x: 2.9, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 612368525}
   m_RootOrder: 0
@@ -1917,8 +1939,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &612368524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,8 +2079,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628002540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -4.166364, z: -37.18}
-  m_LocalScale: {x: 3.5, y: 5, z: 1}
+  m_LocalPosition: {x: 0.31, y: -4.887, z: -37.18}
+  m_LocalScale: {x: 2.9, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 612368525}
   m_RootOrder: 1
@@ -2184,8 +2208,118 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
+--- !u!1 &675253726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675253727}
+  - component: {fileID: 675253731}
+  - component: {fileID: 675253730}
+  - component: {fileID: 675253729}
+  - component: {fileID: 675253728}
+  m_Layer: 0
+  m_Name: Atm (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &675253727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675253726}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2.3833494, y: -2.8877177, z: 101.54321}
+  m_LocalScale: {x: 1, y: 3, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1220049747}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &675253728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675253726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a024e187850c8146b8e3aed6d508888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &675253729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675253726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &675253730
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675253726}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6cf131ba73ec21a4681bb713cd8a964e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &675253731
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675253726}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &682809165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,8 +2509,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,8 +2729,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &757191751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,8 +2952,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &854914348
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,8 +3079,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &888614212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,8 +3269,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &942340653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,8 +3628,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &982099664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,8 +3851,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1079042519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3741,7 +3889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -20, y: 11}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1079042521
@@ -3773,8 +3921,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283562234
-  m_fontColor: {r: 0.9811321, g: 0.9729746, b: 0.3184051, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3791,8 +3939,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 47
+  m_fontSizeBase: 47
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3853,8 +4001,8 @@ GameObject:
   - component: {fileID: 1149858380}
   - component: {fileID: 1149858379}
   - component: {fileID: 1149858378}
-  - component: {fileID: 1149858381}
   - component: {fileID: 1149858382}
+  - component: {fileID: 1149858381}
   m_Layer: 0
   m_Name: LastAtm
   m_TagString: Untagged
@@ -3870,11 +4018,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149858376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.31, y: -0.414, z: 151.062}
+  m_LocalPosition: {x: -6.34, y: -3.1527176, z: 155.3252}
   m_LocalScale: {x: 1, y: 2.5, z: 1.75}
   m_Children: []
-  m_Father: {fileID: 1462051248}
-  m_RootOrder: 6
+  m_Father: {fileID: 1220049747}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1149858378
 BoxCollider:
@@ -4089,8 +4237,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
+--- !u!1 &1220049746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220049747}
+  m_Layer: 0
+  m_Name: ATMs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1220049747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220049746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5033495, y: 2.7387176, z: -4.2631836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1149858377}
+  - {fileID: 1304686944}
+  - {fileID: 675253727}
+  m_Father: {fileID: 1462051248}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225031084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,8 +4397,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1232323685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4339,8 +4524,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1257140312
 GameObject:
   m_ObjectHideFlags: 0
@@ -4464,8 +4651,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1297948361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,8 +4778,118 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
+--- !u!1 &1304686943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1304686944}
+  - component: {fileID: 1304686947}
+  - component: {fileID: 1304686946}
+  - component: {fileID: 1304686945}
+  - component: {fileID: 1304686948}
+  m_Layer: 0
+  m_Name: Atm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1304686944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304686943}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.6066504, y: -2.8877177, z: 44.483154}
+  m_LocalScale: {x: 1, y: 3, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1220049747}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &1304686945
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304686943}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1304686946
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304686943}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6cf131ba73ec21a4681bb713cd8a964e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1304686947
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304686943}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1304686948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304686943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a024e187850c8146b8e3aed6d508888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1345957481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4733,8 +5032,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.46163172, z: 0.53459394}
-  m_Center: {x: 0, y: 0.26918432, z: -0.26729703}
+  m_Size: {x: 1, y: 0.38712543, z: 0.53459394}
+  m_Center: {x: 0, y: -0.30808747, z: -0.26729703}
 --- !u!64 &1377474711
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4810,7 +5109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18f26a23b773f748be3d1a78b99afab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelButton: {fileID: 555915825}
+  NextLevelButton: {fileID: 555915825}
 --- !u!1 &1428579309 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed23e8613adb4f54b9b6a500313cc134, type: 3}
@@ -5016,8 +5315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1462051247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,7 +5352,7 @@ Transform:
   - {fileID: 1584715148}
   - {fileID: 1345957485}
   - {fileID: 1377474709}
-  - {fileID: 1149858377}
+  - {fileID: 1220049747}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5211,8 +5512,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1486501749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5336,8 +5639,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1509133315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,8 +6056,144 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
+--- !u!1 &1685868088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685868089}
+  - component: {fileID: 1685868091}
+  - component: {fileID: 1685868090}
+  m_Layer: 5
+  m_Name: Score Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1685868089
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685868088}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1834390122}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -221, y: -110}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1685868090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685868088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Score: 0'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 47
+  m_fontSizeBase: 47
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 12.125519, y: 0, z: -105.45459, w: -18.108154}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1685868091
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685868088}
+  m_CullTransparentMesh: 1
 --- !u!1 &1739243436
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,8 +6317,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1742142069
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,8 +6552,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1809853312
 GameObject:
   m_ObjectHideFlags: 0
@@ -6234,8 +6679,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1001 &1827962351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6391,6 +6838,7 @@ RectTransform:
   - {fileID: 1509133316}
   - {fileID: 500673889}
   - {fileID: 555915824}
+  - {fileID: 1685868089}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6630,8 +7078,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1950086141
 GameObject:
   m_ObjectHideFlags: 0
@@ -6755,8 +7205,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &1959956673
 GameObject:
   m_ObjectHideFlags: 0
@@ -6880,8 +7332,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &2020232363
 GameObject:
   m_ObjectHideFlags: 0
@@ -7005,8 +7459,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoldColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   DiamondColor: {r: 1, g: 0, b: 1, a: 1}
-  isGreen: 0
-  isGold: 0
+  IsGreen: 0
+  IsGold: 0
+  IsDiamond: 0
+  ValueOfCollectable: 0
 --- !u!1 &2035840000
 GameObject:
   m_ObjectHideFlags: 0
