@@ -8,30 +8,37 @@ public class MPBController : MonoBehaviour
     [SerializeField] private Color DiamondColor = Color.magenta;
     private Renderer _renderer = null;
     private MaterialPropertyBlock _materialPropertyBlock = null;
-    public bool isGreen, isGold;
+    public bool IsGreen, IsGold, IsDiamond;
+    public int ValueOfCollectable;
 
     private void Start()
     { 
-        isGreen = true;
-        isGold = false;
+        IsGreen = true;
+        IsGold = false;
+        IsDiamond = false;
+        ValueOfCollectable = 1;
         _renderer = GetComponent<Renderer>();
         _materialPropertyBlock = new MaterialPropertyBlock();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Gate") && isGreen)
+        if (other.CompareTag("Gate") && IsGreen)
         {
             _materialPropertyBlock.SetColor("_Color", GoldColor);
             _renderer.SetPropertyBlock(_materialPropertyBlock);
-            isGold = true;
-            isGreen = false;
+            IsGold = true;
+            ValueOfCollectable++;
+            IsGreen = false;
         }
-        else if (other.CompareTag("Gate") && isGold)
+        else if (other.CompareTag("Gate") && IsGold)
         {
             _materialPropertyBlock.SetColor("_Color", DiamondColor);
             _renderer.SetPropertyBlock(_materialPropertyBlock);
-            isGold = false;
+            IsDiamond = true;
+            ValueOfCollectable++;
+            IsGold = false;
+            
         }
     }
 }
