@@ -6,7 +6,7 @@ public class Collision : MonoBehaviour
 {
     private void Awake()
     {
-        if (gameObject.tag == "Collectable")
+        if (gameObject.CompareTag("Collectable"))
         {
             enabled = false;
         }
@@ -14,7 +14,7 @@ public class Collision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Collectable")
+        if (other.gameObject.CompareTag("Collectable"))
         {
             if (!AtmRush.Instance.Collectables.Contains(other.gameObject))
             {
