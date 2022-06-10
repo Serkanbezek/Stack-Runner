@@ -6,15 +6,17 @@ public class Singleton<T> : MonoBehaviour where T: Singleton<T>
 {
     private static volatile T instance = null;
 
-    public static T Instance
+    public static T Instance { get { return instance; } }
+    
+    private void Awake()
     {
-        get
+        if (instance != null && instance != FindObjectOfType(typeof(T)) as T)
         {
-            if(instance == null)
-            {
-                instance = FindObjectOfType(typeof(T)) as T;
-            }
-            return instance;
+            Destroy((FindObjectOfType(typeof(T)) as T).gameObject);
+        }
+        else
+        {
+            instance = FindObjectOfType(typeof(T)) as T;
         }
     }
 }
