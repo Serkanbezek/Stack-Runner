@@ -15,12 +15,12 @@ public class Movement : Singleton<Movement>
     private Vector3 playerVelocity = Vector3.zero;
     
 
-    private void Awake()
+    private void Start()
     {
         firstCollectable = AtmRush.Instance.Collectables[0];
     }
 
-    void Update()
+    private void Update()
     {
         if (GameManager.Instance.IsGameActive && !GameManager.Instance.IsLevelFinished)
         {
