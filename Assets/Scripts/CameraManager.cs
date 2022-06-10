@@ -13,7 +13,7 @@ public class CameraManager : MonoBehaviour
     private Vector3 camVelocity = Vector3.zero;
     
 
-    private void Awake()
+    private void Start()
     {
         playerPos = Movement.Instance.firstCollectable.transform;
         AllCharactersPos = Movement.Instance.transform;
